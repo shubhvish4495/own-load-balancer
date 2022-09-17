@@ -1,2 +1,2 @@
 # own-load-balancer
-A load balancer implementation in Go
+A load balancer implementation in Go language
