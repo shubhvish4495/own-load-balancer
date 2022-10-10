@@ -4,6 +4,7 @@ import (
 	"errors"
 	"log"
 	"net/http"
+	"sync"
 )
 
 var client *http.Client
@@ -26,6 +27,7 @@ type Service struct {
 	ServiceHost string
 	IsServiceAvailable bool
 	ServiceErrorContinuousErrCount int
+	ServiceLock *sync.Mutex
 }
 
 // Ping the requested service to check health
