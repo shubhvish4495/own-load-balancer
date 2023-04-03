@@ -1,0 +1,14 @@
+name: Go repo github actions
+run-name: build and test
+on: [push]
+
+jobs:
+  Explore-actions:
+    runs-on:  ubuntu-latest
+    steps:
+      - run: echo "Explore actions"
+
+  After-Explore-actions:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "After explore actions"
