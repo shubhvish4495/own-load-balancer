@@ -6,5 +6,9 @@ jobs:
   Explore-actions:
     runs-on:  ubuntu-latest
     steps:
-      - run: go build .
-      - run: go test ./...
+      - run: echo "Explore actions"
+
+  After-Explore-actions:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "After explore actions"
